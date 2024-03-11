@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>contato</legend>
+            <div>
+                <label for="fullname">Nome e sobrenome:</label>
+                <input type="text" id="fullname" name="Nome" placeholder="otávio">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Email@emai.com">
+            </div>
+            <div>
+                <label for="nasc">Dia de nasciento: </label>
+                <input type="date" id="nasc" placeholder="22/09/3000">
+            </div>
+            <div>
+                <label for="rg">RG: </label>
+                <input type="text" id="rg" placeholder="00.00.0000">
+            </div>
+            <div>
+                <label for="cpf">CPF: </label>
+                <input type="text" placeholder="000.000.000-00">
+            </div>
+            <div>
+                <label for="mae">Nome da mãe: </label>
+                <input type="text" id="mae" placeholder="Maria">
+            </div>
+            <div>
+                <label for="pai">Nome do pai: </label>
+                <input type="text" id="pai" placeholder="José">
+            </div>
+            <div>
+                <p>Gênero</p>
+                <label for="masculino">masculino</label>
+                <input type="radio" name="genero" id="masculino" value="genero masculino">
+                <label for="feminino">feminino</label>
+                <input type="radio" name="genero" id="feminino" value="genero feminino">
+                <label for="outro">Outro</label>
+                <input type="radio" name="genero" id="outro" value="genero outro">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de endereço</legend>
+            <div><label for="endereco">Endereco: </label><input type="text" id="endereco"></div>
+            <div><label for="rua">Rua: </label><input type="text" id="rua"></div>
+            <div><label for="bairro">Bairro: </label><input type="text"></div>
+            <div><label for="numero">Número: </label><input type="number" placeholder="545" id="numero"></div>
+            <div><label for="comp">Complemento: </label><input type="text" id="comp"></div>
+            <div><label for="cep">CEP: </label><input type="text" id="cep" placeholder="000-000"></div>
+        </fieldset>
+    </form>
+</body>
+</html>

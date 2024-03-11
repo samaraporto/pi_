@@ -6,16 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="servidor">
-        <div>
-            <label for="usuario">Nome do usuário</label>
-            <input type="text" id="usuario" placeholder="...." name="nome">
-        </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input type="text" id="email" name="email">
-        </div>
+    <form action="http://localhost:54545/dest" method="POST">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="usuario">Nome do usuário</label>
+                <input type="text" id="usuario" placeholder="...." name="nome">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+                <div>
+                    <p>Escolha seu genero na lista abaixo</p>
+                    <label for="masculino">masculino</label>
+                    <input type="radio" name="genero" id="masculino" value="genero masculino">
+                    <label for="feminino">feminino</label>
+                    <input type="radio" name="genero" id="feminino" value="genero feminino">
+                    <label for="outro">Outro</label>
+                    <input type="radio" name="genero" id="outro" value="genero outro">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Linguagens preferidas</legend>
+            <div>
+                <p>escolha sua linguagem fovorita</p>
+                <label for="js">Javascript</label>
+                <input type="checkbox" id="js" name="js" checked="true">
+                <label for="py">Python</label>
+                <input type="checkbox" name="py" id="py" disabled>
+                <label for="jv">Java</label>
+                <input type="checkbox" name="jv" id="jv">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o feedback</legend>
+            <select name="assunto" id="assunto" >
+                <option value="suporte">Feedback para o suporte</option>
+                <option value="ctma">Cordenacao de tecnologia e meio ambiente</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Foto 3x4</legend>
+            <label for="foto">Adicione uma foto 3x4</label>
+            <input type="file" name="foto" id="foto" accept=".png, .jpeg, .jpg">
+        </fieldset>
+
         <button type="submit">Salvar Informações</button>
     </form>
+
 </body>
 </html>
