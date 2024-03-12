@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Informações pessoais para a compra</legend>
+            <div>
+                <label for="username">Nome do usuário</label>
+                <input type="text" id="username" name="username" value="unknown">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="CPF">CPF</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="telefone" id="tel">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div>
+                <label for="compra">Data da compra</label>
+                <input type="datetime-local" name="compra" id="compra">
+            </div>
+            <div>
+                <label for="l1">livro 1</label>
+                <input type="checkbox" name="l1" id="l1" checked><br>
+                <label for="l2">livro 2</label>
+                <input type="checkbox" name="l2" id="l2">
+            </div>
+            <div>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="feminino" id="feminino" value="feminino" checked><br>
+
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="masculino" id="masculino" value="masculino">
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>

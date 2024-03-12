@@ -1,41 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+/<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
-    <form action="" method="post">
+    <h1>Exemplo de formulário para a compra de livros</h1>
+    <form action="http://localhost:54545/dest" method="POST">
         <fieldset>
-            <legend>contato</legend>
+            <legend>Contato</legend>
             <div>
                 <label for="fullname">Nome e sobrenome:</label>
-                <input type="text" id="fullname" name="Nome" placeholder="otávio">
+                <input type="text" id="fullname" name="nome" placeholder="Kaio Oliveira Correia" required>
             </div>
             <div>
-                <label for="email">Email: </label>
+                <label for="email">E-mail: </label>
                 <input type="email" id="email" name="email" placeholder="Email@emai.com">
             </div>
             <div>
-                <label for="nasc">Dia de nasciento: </label>
-                <input type="date" id="nasc" placeholder="22/09/3000">
+                <label for="nascimento">Dia de nasciento: </label>
+                <input type="date" id="nascimento" name="data_nascimento" required>
             </div>
             <div>
                 <label for="rg">RG: </label>
-                <input type="text" id="rg" placeholder="00.00.0000">
+                <input type="text" id="rg" name="rg" placeholder="00.00.0000" required>
             </div>
             <div>
                 <label for="cpf">CPF: </label>
-                <input type="text" placeholder="000.000.000-00">
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
             </div>
             <div>
                 <label for="mae">Nome da mãe: </label>
-                <input type="text" id="mae" placeholder="Maria">
+                <input type="text" id="mae" name="nome_mae" placeholder="Maria Oliveira da Silva" required>
             </div>
             <div>
                 <label for="pai">Nome do pai: </label>
-                <input type="text" id="pai" placeholder="José">
+                <input type="text" id="pai" name="Nome_pai" placeholder="José Correia Santos" required>
             </div>
             <div>
                 <p>Gênero</p>
@@ -49,14 +50,59 @@
         </fieldset>
 
         <fieldset>
-            <legend>Dados de endereço</legend>
-            <div><label for="endereco">Endereco: </label><input type="text" id="endereco"></div>
-            <div><label for="rua">Rua: </label><input type="text" id="rua"></div>
-            <div><label for="bairro">Bairro: </label><input type="text"></div>
-            <div><label for="numero">Número: </label><input type="number" placeholder="545" id="numero"></div>
-            <div><label for="comp">Complemento: </label><input type="text" id="comp"></div>
-            <div><label for="cep">CEP: </label><input type="text" id="cep" placeholder="000-000"></div>
+            <legend>Dados de Endereço</legend>
+            <div>
+                <label for="endereco">Endereco: </label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+            <div>
+                <label for="rua">Rua: </label>
+                <input type="text" name="rua" id="rua" placeholder="Av. das Flores">
+            </div>
+            <div>
+                <label for="bairro">Bairro: </label>
+                <input type="text" id="bairro" name="bairro" placeholder="Jardim Primavera">
+            </div>
+            <div>
+                <label for="numero">Número: </label>
+                <input type="number" placeholder="545" id="numero" name="numero">
+            </div>
+            <div>
+                <label for="comp">Complemento: </label>
+                <input type="text"  id="comp" name="complemento" placeholder="Apartamento 456">
+            </div>
+            <div>
+                <label for="cep">CEP: </label>
+                <input type="text" name="cep" id="cep" placeholder="00000-000">
+            </div>
         </fieldset>
+        <fieldset>
+            <legend>Informações do Produto</legend>
+            <div>
+                <input type="checkbox" name="produto" id="hp">
+                <label for="hp"><strong>Harry Potter e a Pedra Filosofal</strong></label>
+                <p>Autor: J.K. Rowling</p>
+                <p>Gênero: Fantasia</p>
+                <p>Sinopse: O primeiro livro da série Harry Potter apresenta Harry, um jovem órfão que descobre ser um bruxo e é enviado para a Escola de Magia e Bruxaria de Hogwarts.</p>
+                <p>Preço: R$ 39,90</p>
+            </div>
+            <div>
+                <input type="checkbox" name="produto" id="ogm">
+                <label for="ogm"><strong>O Guia do Mochileiro das Galáxias</strong></label>
+                <p>Autor: Douglas Adams</p>
+                <p>Gênero: Ficção científica / Comédia</p>
+                <p>Sinopse: Após a Terra ser destruída para dar lugar a uma via expressa hiperespacial, Arthur Dent inicia uma peculiar aventura espacial ao lado de um alienígena.</p>
+                <p>Preço: R$ 29,90</p>
+            </div>
+            <div>
+                <input type="checkbox" name="produto" id="pf">
+                <label for="pf"><strong>Orgulho e Preconceito</strong></label>
+                <p>Autor: Jane Austen</p>
+                <p>Gênero: Romance</p>
+                <p>Sinopse: O livro narra a história de Elizabeth Bennet, uma jovem inteligente e perspicaz que lida com questões de moralidade, educação e casamento na sociedade inglesa do século XIX.</p>
+                <p>Preço: R$ 24,90</p>
+            </div>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
