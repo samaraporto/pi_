@@ -1,0 +1,22 @@
+p {
+    color: pink;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: overline;
+    /* background-color: #c66;*/
+}
+div {
+    background-image: url(img/astronauta.png);
+    height: 98vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+body{
+    background-image: url(img/espaco.jpg);
+}
