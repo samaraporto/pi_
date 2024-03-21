@@ -1,12 +1,17 @@
-img{
-    height: 30px;
-    width: 30px;
-}
 * {
     color: #343;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+.profile-card img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 150px;
+}
+body{
+    background-color: aliceblue;
 }
 .profile-card{
     max-width: 400px;
@@ -14,16 +19,19 @@ img{
     max-height: 200px;
     min-height: 100px;
     padding: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    border: 2px black solid;
+    border-radius: 8px;
+    background-color: white;
 }
-div > p{
+.profile-card div > p{
     font-size: 16px;
 }
-h2{
+.profile-card h2{
     font-size: 32px;
     font-weight: 700;
 }
-a{
+.profile-card a{
     color: green;
     text-decoration: none;
 }
