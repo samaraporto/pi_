@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+/* body {
+    display: flex; 
+    width: 100vw;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} */
+
+div {
+    /* width: 50px; */
+    /* height: 50px; */
+    /* min-width: 100px; */
+    /* min-height: 100px; */
+    /* max-width: 200px; */
+    /* max-height: 200px; */
+    /* background-color: blue; */
+    /* border: 1px solid #000; */
+    /* margin: 2px auto; */
+    /* overflow: scroll; */
+    /* margin-bottom: 2px;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-right: 10px; */
+    /* margin: 2px 10px 2px 10px; */
+    /* margin: 2px 10px; */
+    /* margin: 10px; */
+    
+}
+
+.elementos-azuis {
+    color: blue;
+}
+
+.elementos-vermelhos {
+    color: red;
+}
+
+#secao-principal {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+/* div > a {
+    font-size: 40px;
+} */
+
+div > h1 ~ h2 {
+    color: blue;
+}
+
+.classe-div h3.classe-h3,
+.classe-div h2.classe-h3 {
+    color: green;
+    background-color: aquamarine;
+    font-size: 10px;
+}
+
+a[href="#pag2"] {
+    color: yellow;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+.box-grande {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+
+    background-color: green;
+    color: white;
+
+    padding: 10px;
+}
+
+.box-grande > p {
+    background-color: blue;
+}

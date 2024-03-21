@@ -3,70 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seletores</title>
     <style>
-.azul{
-    color: blue;
-}
-.vermelho{
-    color: red;
-}
-#main{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-}
-    section > a{
-        font-size: 20px;
-    }
-    div h1+h2{
-        color: blue;
-    }
-    div h1 ~ h2{
-        color: blue;
-    }
-    a[href="#pag2"]{
-        color: yellow;
-    }
-    .box-grande{
-        height: 200px;
-        width: 200px;
-        background-color: pink;
-        box-sizing: border-box;
-    }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .red-label{
+            color: red;
+        }
+        #total-red{
+            font-style: oblique;
+        }
+        div a{
+            text-decoration: line-through;
+        }
+        div > h1{
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 5px 5px 5px rgb(129, 48, 48);
+            font-size: 20px;
+        }
+        h1 + h2{
+            color: lightblue;
+        }
+        h1 ~ h4{
+            background-color: rgb(209, 108, 125);
+            text-shadow: 5px 5px 5px rgb(129, 48, 48);
+            border-radius: 5px;
+            width: 60px;
+            height: 20px;
+            margin: 2px 3px;
+            text-align: center;
+        }
+        a[href="#pag3"]{
+            color: rgb(0, 0, 0);
+        }
+        h1, h2{
+            text-decoration: underline;
+        }
+        button{
+            display: block;
+            width: 50px;
+            height: 20px;
+
+            border: 2px solid red;
+            background-color: #ffffff;
+            border-radius: 7px;
+        }
+        a:link{
+            color: darkorange;
+        }
+        a:visited{
+            color: yellowgreen;
+        }
+        button:hover{
+            border: 2px solid pink ;
+            background-color: black;
+            color: white;
+        }
+        
     </style>
 </head>
 <body>
-    <!-- <div>
-        <a href="#" class="azul">primeiro</a>
-        <a href="#" class="vermelho">segundo</a>
-        <section id="main">
-            <h1></h1>
-            <a href="#" class="azul">terceiro</a>
-            <a href="#" class="azul">quarto</a>
-        </section>
-    </div> -->
     <div>
-        <h3>t3</h3>
-        <h2>t2</h2>
-        <h1>t1</h1>
-        <h2>t2</h2>
-        <h2>t2</h2>
-        <h2>t2</h2>
+        <h1>dentro da div h1</h1>
+        <h4>Título 4</h4>
+        <h4>Título 4</h4>
+        <a id="total-red" href="#pag1" class="red-label">Página 1</a>
+        <a href="#pag2">Página 2</a>
         <section>
-            <h1>t1</h1>
-            <h2>t2</h2>
-            <h2>t2</h2>
-            <h2>t2</h2>
+            <h1>dentro da section da div</h1>
+            <h2>um h2 na section</h2>
+            <h2>outro h2 na section</h2>
+            <a href="#pag3" class="red-label">Página 3</a>
+            <a href="#pag4">Página 4</a>
         </section>
-        <h1>t1</h1>
-        <h2>t2</h2>
-        <h2>t2</h2>
-        <h2>t2</h2>
-    </div>
-    <a href="#pag1">pag1</a><a href="#pag2">pag2</a><a href="#pag3">pag3</a>
-    <div class="box-grande">
-
+        <button>Enviar</button>
     </div>
 </body>
 </html>
