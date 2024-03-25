@@ -35,3 +35,13 @@ div:hover {
 
     cursor: pointer;
 }
+input[type="checkbox"]:checked + main{
+    display: none;
+}
+main div:nth-of-type(n + 5){
+    background-color: red;
+}
+div:active{
+    background-color: pink;
+    transition: all 1s ease-in-out;
+}
