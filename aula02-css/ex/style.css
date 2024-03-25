@@ -11,7 +11,7 @@
     margin-left: 150px;
 }
 body{
-    background-color: aliceblue;
+    background-image: linear-gradient(to left,rgb(255, 186, 198),rgb(255, 221, 226),rgb(210, 244, 255));
 }
 .profile-card{
     max-width: 400px;
@@ -34,4 +34,15 @@ body{
 .profile-card a{
     color: green;
     text-decoration: none;
+}
+.profile-card [href="+558799999999"]:active{
+    transition: all 1s ease-in-out;
+    color: red;
+}
+.profile-card [href="+558799999999"]:visited{
+    color: blue;
+}
+.profile-card:hover{
+    transition: all 500ms ease-in-out;
+    background-color: rgb(173, 148, 173);
 }
