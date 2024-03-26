@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            height: 100px;
+            background-color: #f0f0f0;
+            /* justify-content mexe no eixo principal */
+            justify-content: center;
+            /* align-items mexe no eixo perpendicular */
+            align-items: center;
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        article{
+            margin: 10px;
+            padding: 10px;
+        }
+        .sec1 article:nth-child(1){
+            background-color: palevioletred;
+        }
+        .sec1 article:nth-child(2){
+            background-color: rgb(214, 141, 166);
+        }
+        .sec1 article:nth-child(3){
+            background-color: rgb(216, 84, 128);
+        }
+        .sec2 article:nth-child(1){
+            background-color: rgb(193, 216, 112);
+        }
+        .sec2 article:nth-child(2){
+            background-color: rgb(194, 214, 141);
+        }
+        .sec2 article:nth-child(3){
+            background-color: rgb(176, 216, 84);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo Flexbox</h1>
+    </header>
+    <section class="sec1">
+        <article>
+            <h2>article 1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequatur maiores nobis corrupti dolor sint eligendi qua
+                e ipsa qui delectus? Maiores, labore consequatur? Voluptat
+                em aliquid quis maxime libero repudiandae inventore offic
+                ia!
+            </p>
+        </article>
+        <article>
+            <h2>article 2</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisici
+                ng elit. Numquam eaque vitae nam dolore, laudantium
+                velit nemo veritatis delectus quis iste qui hic incidu
+                nt laboriosam ratione eligendi necessitatibus odit imp
+                edit temporibus.
+            </p>
+        </article>
+        <article>
+            <h2>article 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicin
+                g elit. In nam pariatur recusandae molestiae minima!
+                Recusandae dolores, ipsam quidem quaerat vero quibusd
+                am praesentium odio dignissimos doloremque perferendis
+                 ea officiis. Porro, tempora.
+            </p>
+        </article>
+    </section>
+    <section class="sec2">
+        <article>
+            <h2>article 1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequatur maiores nobis corrupti dolor sint eligendi qua
+                e ipsa qui delectus? Maiores, labore consequatur? Voluptat
+                em aliquid quis maxime libero repudiandae inventore offic
+                ia!
+            </p>
+        </article>
+        <article>
+            <h2>article 2</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisici
+                ng elit. Numquam eaque vitae nam dolore, laudantium
+                velit nemo veritatis delectus quis iste qui hic incidu
+                nt laboriosam ratione eligendi necessitatibus odit imp
+                edit temporibus.
+            </p>
+        </article>
+        <article>
+            <h2>article 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicin
+                g elit. In nam pariatur recusandae molestiae minima!
+                Recusandae dolores, ipsam quidem quaerat vero quibusd
+                am praesentium odio dignissimos doloremque perferendis
+                 ea officiis. Porro, tempora.
+            </p>
+        </article>
+    </section>
+</body>
+</html>
