@@ -87,3 +87,9 @@ a[href="#pag2"] {
 .box-grande > p {
     background-color: blue;
 }
+p:not(.meio){
+    background-color: yellow;
+}
+input:not(:checked)+p{
+    background-color: pink;
+}
